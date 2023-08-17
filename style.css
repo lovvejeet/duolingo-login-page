@@ -48,6 +48,17 @@ body{
     grid-template-columns: 1fr 400px 1fr;
     row-gap: 26px;
 
+    @media (max-width: 480px) {
+      /* grid-template-columns: 320px;
+      row-gap: 20px;
+
+      grid-template-rows:[main-start] 480px [main-end footer-start]1fr[footer-end]; */
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
 }
 .overall{
   grid-column: 2/3;
@@ -56,6 +67,16 @@ body{
   flex-direction: column;
   row-gap: 25px;
   height: max-content;
+
+  @media (max-width: 480px) {
+  
+    row-gap: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 .logo-main{
     grid-row: logo-start/logo-end;
@@ -70,6 +91,10 @@ body{
 .logo-b{
     height: 38px;
     width: 224px;
+
+    @media (max-width: 480px) {
+      display: none;
+  }
 }
 /* loging form */
 .main-content{
@@ -91,6 +116,21 @@ body{
     width: 364px;
     height: max-content;
     
+
+    @media (max-width: 480px) {
+      row-gap: 20px;
+      width: 300px;
+      height: max-content;
+
+      padding-top:15px ;
+      padding-bottom: 30px;
+      padding-left:22px ;
+      padding-right: 22px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
 }
 
      /* login heading */
@@ -101,6 +141,13 @@ body{
     font-weight: 700;
     font-size: 30px;
     font-family: 'DIN Round Bold',sans-serif;
+
+    
+    @media (max-width: 480px) {
+      font-family: 'DIN Round Bold',sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+  }
 
 
 }
@@ -122,7 +169,6 @@ body{
 }
       /* email&password labels */
 .email-label,.pass-label{
-    font-size: 15px;
     margin-bottom: 6px;
     line-height: 120%;
     color: #3d4d5c;
@@ -132,6 +178,15 @@ body{
     font-size: 15px;
     
     font-family: 'DIN Round light',sans-serif;
+
+    @media (max-width: 480px) {
+      font-family: 'DIN Round Bold',sans-serif;
+      font-size: 10px;
+      margin-bottom: 5px;
+      line-height: 100%;
+      height: -moz-fit-content!important;
+      height: fit-content!important;
+  }
 
 
 }
@@ -161,6 +216,12 @@ body{
     font-family:'DIN Round Bold',sans-serif;
     font-size: 15px;
     letter-spacing: .6px;
+
+    @media (max-width: 480px) {
+      gap: 8px;
+      padding: 8px;
+      font-size: 12px;
+    }
 }
 
 
@@ -186,6 +247,11 @@ body{
     font-weight: 700;
     letter-spacing: .5px;
     height: 40px;
+
+    @media (max-width: 480px) {
+      height: 30px;
+      font-size: 12px;
+    }
 }
 
 #nextButton.active,
@@ -242,6 +308,11 @@ body{
 
     display: grid;
     justify-content: center;
+
+    @media (max-width: 480px) {
+      font-size: 11px;
+      height: 30px;
+    }
   }
 
   .a-google{
@@ -265,6 +336,10 @@ body{
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
     width: 100%;
+
+    @media (max-width: 480px) {
+      padding: 8px;
+    }
   }
   
   .google:hover {
@@ -288,6 +363,10 @@ body{
   .footer{
     gap: 15px;
     padding-top: 15px;
+
+    @media (max-width: 480px) {
+      padding-top: 2px;
+    }
   }
 
   .footer-last{
@@ -297,6 +376,12 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+
+    @media (max-width: 480px) {
+      margin-top: 0;
+
+    }
+  
   }
 
   .signup{
@@ -305,6 +390,11 @@ body{
 
     font-family: "DIN Round Bold";
     font-size: 16px;
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+
+    }
 
   }
   .signup-span{
@@ -338,6 +428,13 @@ body{
     gap: 10px;
     padding: 12px;
     width: 100%;
+
+     font-size: 15px;
+
+     @media (max-width: 480px) {
+      gap: 8px;
+    padding: 8px;
+    }
 }
 
 
@@ -350,6 +447,12 @@ body{
   font-family:'DIN Round Bold',sans-serif;
   font-size: 15px;
   letter-spacing: .8px;
+
+  @media (max-width: 480px) {
+    font-size: 11px;
+  }
+
+
 }
 #passwordInput:active,
 #passwordInput:focus{
